@@ -57,7 +57,7 @@ function setup() {
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
-  trex.scale = 0.5;
+  trex.scale = 0.6;
   
   //haz responsivo el suelo
   ground = createSprite(width/2,height-110,width,112);
@@ -186,7 +186,7 @@ function spawnClouds() {
     cloud.scale = 0.1;
     cloud.velocityX = -3;
     
-    cloud.lifetime = 200;
+    cloud.lifetime = 600;
     
     cloud.depth = trex.depth;
     trex.depth = trex.depth + 1;
@@ -261,7 +261,7 @@ function spawnTesoros() {
       default: break;
     }
            
-    Tesoros.scale = 0.1;
+    Tesoros.scale = 0.2;
     Tesoros.lifetime = 300;
 
     TesorosGroup.add(Tesoros);
