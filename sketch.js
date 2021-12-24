@@ -46,7 +46,7 @@ function preload(){
 
 function setup() {
   //Logra hacer responsivo el espacio visual
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1280, 475);
   
   PPG = createSprite(250,65);
   PPG.addImage(PPGImg);
